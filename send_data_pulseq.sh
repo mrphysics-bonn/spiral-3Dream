@@ -14,4 +14,4 @@ else
     OUT_FILE="$2"
 fi
 
-client.py -a 127.0.0.1 -c bart_pulseq -o $OUT_FILE $IN_FILE
+client.py -a 127.0.0.1 -G images -c bart_pulseq -o $OUT_FILE $IN_FILE
