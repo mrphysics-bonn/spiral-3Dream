@@ -1,14 +1,25 @@
-# spiral-3Dream
+# Spiral 3DREAM sequence and reconstruction
 
-## Code for bachelor thesis on expanding the 3DREAM sequence for B1 mapping with a spiral imaging train
+This repository contains files to reproduce results from the 2022 ISMRM abstract #219 "Spiral 3DREAM sequence for fast whole-brain B1 Mapping"
 
-The repository includes notebooks for the spiral 2DREAM and 3DREAM implementation using Pulseq [1] (with Python's toolbox PyPulseq [2])
-and extra code for analysis that is done in the bachelor thesis.
+## Overview
 
-The name of each notebook arises from the belonging figure number in the thesis.
+The repository contains several files to reproduce the results of the abstract:
+- The Pulseq spiral 3DREAM sequence file: "20210721_3Dream_beta5.seq".
+- Raw data collected with the sequence on a 7T Siemens Magnetom scanner in the MRD format: file "rawdata_spiral3dream.h5". 
+- Reconstructed images stored in the MRD image format: "images_spiral3dream.h5". 
+- Images converted to Nifti are in the "nifti" folder. The folder contains STE and FID images and the resulting flip angle map in degrees times factor 10.
 
-### References
+For running the reconstruction pipeline, a Python environment is required, which can be installed by using the provided yml file: `conda env create -f ismrmrd_client.yml`. Also, a Docker installation is required. More information on the reconstruction server can be found at https://github.com/mrphysics-bonn/python-ismrmrd-reco.
 
-[1] Kelvin J. Layton et al. ‘Pulseq: A rapid and hardware-independent pulse sequence prototyping framework’. In: Magnetic Resonance in Medicine 77.4 (2017), pp. 1544–1552.
+Reproducing the reconstruction:
+1. To reproduce the reconstruction, the reconstruction server has to be pulled from DockerHub: `docker pull mavel101/dream_reco`.
+2. Start the server by running `./start_docker` from this directory.
+3. Activate the conda environment: `conda activate ismrmrd_client`.
+4. Run the reconstruction with the command `./send_data_pulseq.sh rawdata_spiral3dream.h5 out.h5`. The result will be saved in the file out.h5 in MRD image format.
 
-[2] Keerthi Sravan Ravi, Sairam Geethanath and John Thomas Vaughan. ‘PyPulseq: A Python Package for MRI Pulse Sequence Design’. In: Journal of Open Source Software 4.42 (2019), p. 1725
+The reconstruction pipelines source code can be found in the submodule "python-ismrmrd-server" (file "bart_pulseq_spiral_dream.py").
+
+## Author
+
+Questions & feedback go to marten.veldmann@dzne.de

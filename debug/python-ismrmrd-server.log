@@ -1,0 +1,47 @@
+2022-04-20 17:16:57,526 - Starting server and listening for data at 0.0.0.0:9002
+2022-04-20 17:16:57,526 - Serving... 
+2022-04-20 17:23:49,498 - Accepting connection from: 172.17.0.1:47328
+2022-04-20 17:23:49,504 -     bart_pulseq
+2022-04-20 17:23:49,527 - Data is from a SIEMENS Investigational_Device_7T_Plus at 7.0T
+2022-04-20 17:23:49,561 - Starting bart_pulseq processing based on config
+2022-04-20 17:23:49,562 - No protocol file available.
+Traceback (most recent call last):
+  File "/opt/code/python-ismrmrd-server/server.py", line 107, in handle
+    bart_pulseq.process(connection, config, metadata)
+  File "/opt/code/python-ismrmrd-server/bart_pulseq.py", line 44, in process
+    raise ValueError("No protocol file available.")
+ValueError: No protocol file available.
+2022-04-20 17:23:49,562 - Socket closed
+2022-04-20 17:24:48,049 - Starting server and listening for data at 0.0.0.0:9002
+2022-04-20 17:24:48,049 - Serving... 
+2022-04-20 17:25:00,798 - Accepting connection from: 172.17.0.1:47330
+2022-04-20 17:25:00,802 -     bart_pulseq
+2022-04-20 17:25:00,819 - Data is from a SIEMENS Investigational_Device_7T_Plus at 7.0T
+2022-04-20 17:25:00,850 - Starting bart_pulseq processing based on config
+2022-04-20 17:25:00,850 - No protocol file available.
+Traceback (most recent call last):
+  File "/opt/code/python-ismrmrd-server/server.py", line 107, in handle
+    bart_pulseq.process(connection, config, metadata)
+  File "/opt/code/python-ismrmrd-server/bart_pulseq.py", line 44, in process
+    raise ValueError("No protocol file available.")
+ValueError: No protocol file available.
+2022-04-20 17:25:00,852 - Socket closed
+2022-04-20 17:51:54,080 - Starting server and listening for data at 0.0.0.0:9002
+2022-04-20 17:51:54,080 - Serving... 
+2022-04-20 17:52:09,382 - Accepting connection from: 172.17.0.1:47332
+2022-04-20 17:52:09,387 -     bart_pulseq
+2022-04-20 17:52:09,405 - Data is from a SIEMENS Investigational_Device_7T_Plus at 7.0T
+2022-04-20 17:52:09,552 - Starting bart_pulseq_spiral_dream processing based on config
+2022-04-20 17:52:09,554 - Spiral DREAM reconstruction
+2022-04-20 17:52:09,557 - Creating converter from 3 to 5
+2022-04-20 17:52:09,561 - Config: 
+bart_pulseq
+2022-04-20 17:52:09,562 - Incoming dataset contains 1 encodings
+2022-04-20 17:52:09,562 - Trajectory type 'spiral', matrix size (40 x 40 x 40), field of view (200.0 x 200.0 x 200.0)mm^3
+2022-04-20 17:52:09,563 - Reading in protocol acquisitions.
+2022-04-20 17:52:09,815 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 1)
+2022-04-20 17:52:09,905 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 100)
+2022-04-20 17:52:09,926 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 200)
+2022-04-20 17:52:10,127 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 300)
+2022-04-20 17:52:10,327 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 400)
+2022-04-20 17:52:10,397 - nx/ny/nz: 40/40/40; enc1 min/max: 0/19; enc2 min/max:0/19, ncol: 40
