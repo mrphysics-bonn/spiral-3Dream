@@ -1,6 +1,6 @@
 # Spiral 3DREAM sequence and reconstruction
 
-This repository contains files to reproduce results from the 2022 ISMRM abstract #219 "Spiral 3DREAM sequence for fast whole-brain B1 Mapping"
+This repository contains files to reproduce results from the 2022 ISMRM abstract "Spiral 3DREAM sequence for fast whole-brain B1 Mapping" (Program Number 1612).
 
 ## Overview
 
