@@ -1,34 +1,37 @@
-2022-04-20 18:01:56,178 - Accepting connection from: 172.17.0.1:47334
-2022-04-20 18:01:56,182 -     bart_pulseq
-2022-04-20 18:01:56,209 - Data is from a SIEMENS Investigational_Device_7T_Plus at 7.0T
-2022-04-20 18:01:56,221 - Starting bart_pulseq_spiral_dream processing based on config
-2022-04-20 18:01:56,222 - Spiral DREAM reconstruction
-2022-04-20 18:01:56,230 - Config: 
+2022-04-28 14:08:56,611 - Starting server and listening for data at 0.0.0.0:9002
+2022-04-28 14:08:56,611 - Serving... 
+2022-04-28 14:09:10,340 - Accepting connection from: 172.17.0.1:51062
+2022-04-28 14:09:10,345 -     bart_pulseq
+2022-04-28 14:09:10,365 - Data is from a SIEMENS Investigational_Device_7T_Plus at 7.0T
+2022-04-28 14:09:10,533 - Starting bart_pulseq_spiral_dream processing based on config
+2022-04-28 14:09:10,534 - Spiral DREAM reconstruction
+2022-04-28 14:09:10,536 - Creating converter from 3 to 5
+2022-04-28 14:09:10,540 - Config: 
 bart_pulseq
-2022-04-20 18:01:56,231 - Incoming dataset contains 1 encodings
-2022-04-20 18:01:56,231 - Trajectory type 'spiral', matrix size (40 x 40 x 40), field of view (200.0 x 200.0 x 200.0)mm^3
-2022-04-20 18:01:56,234 - Reading in protocol acquisitions.
-2022-04-20 18:01:56,484 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 1)
-2022-04-20 18:01:56,530 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 100)
-2022-04-20 18:01:56,708 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 200)
-2022-04-20 18:01:56,898 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 300)
-2022-04-20 18:01:57,090 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 400)
-2022-04-20 18:01:57,164 - nx/ny/nz: 40/40/40; enc1 min/max: 0/19; enc2 min/max:0/19, ncol: 40
-2022-04-20 18:05:20,435 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 500)
-2022-04-20 18:05:20,647 - Processing a group of k-space data
-2022-04-20 18:05:20,677 - Trajectory shape = (3, 410, 60) , Signal Shape = (1, 410, 60, 32) 
-2022-04-20 18:05:49,830 - Image reconstructed with size (40, 40, 40)
-2022-04-20 18:05:49,831 - Sending images to client.
-2022-04-20 18:05:49,832 - --> Sending MRD_MESSAGE_ISMRMRD_IMAGE (1022) (1 images)
-2022-04-20 18:05:49,839 - Processing a group of k-space data
-2022-04-20 18:05:49,885 - Trajectory shape = (3, 410, 60) , Signal Shape = (1, 410, 60, 32) 
-2022-04-20 18:05:49,900 - Global FID filter activated.
-2022-04-20 18:06:18,633 - Image reconstructed with size (40, 40, 40)
-2022-04-20 18:06:18,633 - Calculation of B1 map.
-2022-04-20 18:06:18,652 - current_refvolt = 270.816V and nom_fa = 50.0°^
-2022-04-20 18:06:18,652 - fa map is size (40, 40, 40)
-2022-04-20 18:06:18,653 - ref_volt map is size (40, 40, 40)
-2022-04-20 18:06:18,656 - Sending images to client.
-2022-04-20 18:06:18,656 - --> Sending MRD_MESSAGE_ISMRMRD_IMAGE (1022) (3 images)
-2022-04-20 18:06:18,657 - --> Sending MRD_MESSAGE_CLOSE (4)
-2022-04-20 18:06:18,657 - Socket closed
+2022-04-28 14:09:10,540 - Incoming dataset contains 1 encodings
+2022-04-28 14:09:10,541 - Trajectory type 'spiral', matrix size (40 x 40 x 40), field of view (200.0 x 200.0 x 200.0)mm^3
+2022-04-28 14:09:10,542 - Reading in protocol acquisitions.
+2022-04-28 14:09:10,851 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 1)
+2022-04-28 14:09:10,883 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 100)
+2022-04-28 14:09:10,989 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 200)
+2022-04-28 14:09:11,226 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 300)
+2022-04-28 14:09:11,447 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 400)
+2022-04-28 14:09:11,534 - nx/ny/nz: 40/40/40; enc1 min/max: 0/19; enc2 min/max:0/19, ncol: 40
+2022-04-28 14:13:02,521 - <-- Received MRD_MESSAGE_ISMRMRD_ACQUISITION (1008) (total: 500)
+2022-04-28 14:13:02,753 - Processing a group of k-space data
+2022-04-28 14:13:02,802 - Trajectory shape = (3, 410, 60) , Signal Shape = (1, 410, 60, 32) 
+2022-04-28 14:13:36,929 - Image reconstructed with size (40, 40, 40)
+2022-04-28 14:13:36,936 - Sending images to client.
+2022-04-28 14:13:36,936 - --> Sending MRD_MESSAGE_ISMRMRD_IMAGE (1022) (40 images)
+2022-04-28 14:13:36,955 - Processing a group of k-space data
+2022-04-28 14:13:37,279 - Trajectory shape = (3, 410, 60) , Signal Shape = (1, 410, 60, 32) 
+2022-04-28 14:13:37,478 - Global FID filter activated.
+2022-04-28 14:14:08,237 - Image reconstructed with size (40, 40, 40)
+2022-04-28 14:14:08,238 - Calculation of B1 map.
+2022-04-28 14:14:08,830 - current_refvolt = 270.816V and nom_fa = 50.0°^
+2022-04-28 14:14:08,831 - fa map is size (40, 40, 40)
+2022-04-28 14:14:08,831 - ref_volt map is size (40, 40, 40)
+2022-04-28 14:14:08,873 - Sending images to client.
+2022-04-28 14:14:08,874 - --> Sending MRD_MESSAGE_ISMRMRD_IMAGE (1022) (120 images)
+2022-04-28 14:14:08,901 - --> Sending MRD_MESSAGE_CLOSE (4)
+2022-04-28 14:14:08,902 - Socket closed

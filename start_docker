@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -lt 1 ]; then
-    TAG="bart_cuda"
+    TAG="mavel101/dream_reco"
 else
     TAG="$1"
 fi
