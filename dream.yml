@@ -1,0 +1,12 @@
+name: dream
+channels:
+    - defaults
+dependencies:
+    - python=3.8
+    - pip
+    - numpy=1.23.5
+    - pip:
+        - ismrmrd
+        - sigpy
+        - git+https://github.com/mavel101/pypulseq@dev_mv
+        - git+https://github.com/mrphysics-bonn/spiraltraj.git
